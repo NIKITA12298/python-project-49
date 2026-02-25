@@ -1,0 +1,11 @@
+install:
+    python -m uv sync
+
+brain-games:
+    python -m uv run brain-games
+
+build:
+    python -m uv build
+
+package-install:
+    python -m uv tool install dist/*.whl
